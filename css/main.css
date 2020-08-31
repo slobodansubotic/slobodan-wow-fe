@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none; }
+
+@font-face {
+  font-family: 'Cairo';
+  src: url(../../assets/fonts/Cairo/Cairo-Bold.ttf) format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(../../assets/fonts/Roboto/Roboto-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(../../assets/fonts/Roboto/Roboto-Bold.ttf) format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(../../assets/fonts/Roboto/Roboto-Medium.ttf) format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(../../assets/fonts/Roboto/Roboto-MediumItalic.ttf) format("truetype");
+  font-weight: 500;
+  font-style: italic; }
+
+.u-heading-1 {
+  font-family: "Cairo", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 112px; }
+
+.u-heading-2 {
+  font-family: "Cairo", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 94px; }
+
+.u-heading-3 {
+  font-family: "Cairo", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 56px; }
+
+.u-paragraph-normal {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center; }
+
+.u-paragraph-italic {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center; }
