@@ -1,0 +1,65 @@
+.hero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    height: 100vh;
+    padding-inline-start: 3rem;
+    padding-inline-end: 3rem;
+
+    color: $wow-fc-primary;
+    background:
+        linear-gradient(180deg, #B37D7D 0%, rgba(255, 255, 255, 0) 100%),
+        linear-gradient(180deg, rgba(231, 67, 21, 0.69) 0%, rgba(255, 255, 255, 0) 100%),
+        url(../../assets/images/hero.png) no-repeat top center,
+        #282828;
+    background-blend-mode: multiply, color, normal, normal;
+    background-size: cover;
+
+    @include responsive(small-size) {
+        padding-block-end: 22rem;
+        padding-block-start: 22rem;
+    }
+    
+    &__separator {
+        margin-block-start: 1em;
+    }
+
+    &__heading-prefix {
+        display: block;
+        color: $wow-fc-secondary;
+
+        @include responsive(small-size) {
+            display: inline-block;
+            padding-inline-end: 0.25em;
+            border-inline-end: 1px solid #FFB86C;
+            line-height: 1em;
+        }
+    }
+    
+    &__color-squares {
+        margin-block-end: 1em;
+    }
+
+    &__scroll {
+        width: 7.5rem;
+        padding-block-end: 0.8rem;
+        font-family: Roboto, sans-serif;
+        font-weight: 300;
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+        text-align: center;
+        text-transform: uppercase;
+        border-block-end: 0.2rem solid $wow-c-hard;
+        
+        @include responsive(small-size) {
+            position: absolute;
+            left: 14rem;
+            bottom: 14rem;
+            transform: rotateZ(-90deg);
+            text-align: end;
+        }
+    }
+}

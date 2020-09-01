@@ -1,23 +1,31 @@
-.u-heading-1 {
+.u-heading-1, .u-heading-2, .u-heading-3 {
     font-family: $wow-f-heading;
     font-style: normal;
     font-weight: bold;
-    font-size: $wow-fs-heading-1;
-    line-height: 11.2rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.u-heading-1 {
+    font-size: $wow-fs-heading-1 * 0.5;
+    line-height: 1.2em;
+    
+
+    @include responsive(medium-size) {
+        font-size: $wow-fs-heading-1 * 0.75;
+    }
+
+    @include responsive(large-size) {
+        font-size: $wow-fs-heading-1;
+    }
 }
 
 .u-heading-2 {
-    font-family: $wow-f-heading;
-    font-style: normal;
-    font-weight: bold;
     font-size: $wow-fs-heading-2;
     line-height: 9.4rem;
 }
 
 .u-heading-3 {
-    font-family: $wow-f-heading;
-    font-style: normal;
-    font-weight: bold;
     font-size: $wow-fs-heading-3;
     line-height: 5.6rem;
 }
@@ -26,9 +34,14 @@
     font-family: $wow-f-paragraph;
     font-style: normal;
     font-weight: normal;
-    font-size: $wow-fs-paragraph-m;
-    line-height: 2.1rem;
+    font-size: $wow-fs-paragraph-m * 0.75;
+    line-height: 2.1rem * 0.75;
     text-align: center;
+
+    @include responsive(medium-size) {
+        line-height: 2.1rem;
+        font-size: $wow-fs-paragraph-m;
+    }
 }
 
 .u-paragraph-italic {
@@ -38,4 +51,10 @@
     font-size: $wow-fs-paragraph-s;
     line-height: 1.6rem;
     text-align: center;
+}
+
+.u-separator {
+    width: 8.4rem;
+    height: 0.2rem;
+    background: $wow-c-hard;
 }

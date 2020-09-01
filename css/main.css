@@ -1,6 +1,8 @@
 * {
   margin: 0;
-  padding: 0;
+  padding: 0; }
+
+* {
   box-sizing: border-box;
   text-decoration: none; }
 
@@ -15,14 +17,14 @@ html, body {
 
 @font-face {
   font-family: 'Roboto';
-  src: url(../../assets/fonts/Roboto/Roboto-Regular.ttf) format("truetype");
-  font-weight: 400;
+  src: url(../../assets/fonts/Roboto/Roboto-Light.ttf) format("truetype");
+  font-weight: 300;
   font-style: normal; }
 
 @font-face {
   font-family: 'Roboto';
-  src: url(../../assets/fonts/Roboto/Roboto-Bold.ttf) format("truetype");
-  font-weight: 700;
+  src: url(../../assets/fonts/Roboto/Roboto-Regular.ttf) format("truetype");
+  font-weight: 400;
   font-style: normal; }
 
 @font-face {
@@ -37,6 +39,12 @@ html, body {
   font-weight: 500;
   font-style: italic; }
 
+@font-face {
+  font-family: 'Roboto';
+  src: url(../../assets/fonts/Roboto/Roboto-Bold.ttf) format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+
 /*
     wow -> world of warcraft
     f   ->  font
@@ -46,24 +54,76 @@ html, body {
     m   ->  medium
     s   ->  small
 */
-.u-heading-1 {
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100vh;
+  padding-inline-start: 3rem;
+  padding-inline-end: 3rem;
+  color: #FFFFFF;
+  background: linear-gradient(180deg, #B37D7D 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, rgba(231, 67, 21, 0.69) 0%, rgba(255, 255, 255, 0) 100%), url(../../assets/images/hero.png) no-repeat top center, #282828;
+  background-blend-mode: multiply, color, normal, normal;
+  background-size: cover; }
+  @media (min-width: 800px) {
+    .hero {
+      padding-block-end: 22rem;
+      padding-block-start: 22rem; } }
+  .hero__separator {
+    margin-block-start: 1em; }
+  .hero__heading-prefix {
+    display: block;
+    color: #BCBCBC; }
+    @media (min-width: 800px) {
+      .hero__heading-prefix {
+        display: inline-block;
+        padding-inline-end: 0.25em;
+        border-inline-end: 1px solid #FFB86C;
+        line-height: 1em; } }
+  .hero__color-squares {
+    margin-block-end: 1em; }
+  .hero__scroll {
+    width: 7.5rem;
+    padding-block-end: 0.8rem;
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    text-align: center;
+    text-transform: uppercase;
+    border-block-end: 0.2rem solid #E74315; }
+    @media (min-width: 800px) {
+      .hero__scroll {
+        position: absolute;
+        left: 14rem;
+        bottom: 14rem;
+        transform: rotateZ(-90deg);
+        text-align: end; } }
+
+.u-heading-1, .u-heading-2, .u-heading-3 {
   font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 6rem;
-  line-height: 11.2rem; }
+  text-transform: uppercase;
+  text-align: center; }
+
+.u-heading-1 {
+  font-size: 3rem;
+  line-height: 1.2em; }
+  @media (min-width: 1100px) {
+    .u-heading-1 {
+      font-size: 4.5rem; } }
+  @media (min-width: 1600px) {
+    .u-heading-1 {
+      font-size: 6rem; } }
 
 .u-heading-2 {
-  font-family: "Cairo", sans-serif;
-  font-style: normal;
-  font-weight: bold;
   font-size: 5rem;
   line-height: 9.4rem; }
 
 .u-heading-3 {
-  font-family: "Cairo", sans-serif;
-  font-style: normal;
-  font-weight: bold;
   font-size: 3rem;
   line-height: 5.6rem; }
 
@@ -71,9 +131,13 @@ html, body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 1.8rem;
-  line-height: 2.1rem;
+  font-size: 1.35rem;
+  line-height: 1.575rem;
   text-align: center; }
+  @media (min-width: 1100px) {
+    .u-paragraph-normal {
+      line-height: 2.1rem;
+      font-size: 1.8rem; } }
 
 .u-paragraph-italic {
   font-family: "Roboto", sans-serif;
@@ -82,3 +146,21 @@ html, body {
   font-size: 1.4rem;
   line-height: 1.6rem;
   text-align: center; }
+
+.u-separator {
+  width: 8.4rem;
+  height: 0.2rem;
+  background: #E74315; }
+
+.three-color-squares {
+  display: flex;
+  justify-content: center; }
+  .three-color-squares > div {
+    width: 1.1rem;
+    height: 1.1rem; }
+    .three-color-squares > div:nth-child(1) {
+      background-color: #E74315; }
+    .three-color-squares > div:nth-child(2) {
+      background-color: #FFB86C; }
+    .three-color-squares > div:nth-child(3) {
+      background-color: #50FA7B; }
