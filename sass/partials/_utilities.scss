@@ -1,5 +1,5 @@
 .u-heading-1, .u-heading-2, .u-heading-3 {
-    font-family: $wow-f-heading;
+    font-family: $wow-font-heading;
     font-style: normal;
     font-weight: bold;
     text-transform: uppercase;
@@ -7,54 +7,50 @@
 }
 
 .u-heading-1 {
-    font-size: $wow-fs-heading-1 * 0.5;
-    line-height: 1.2em;
-    
+    font-size: $wow-fsize-heading-s;
+    line-height: 1.2em;    
 
     @include responsive(medium-size) {
-        font-size: $wow-fs-heading-1 * 0.75;
+        font-size: $wow-fsize-heading-m;
     }
 
     @include responsive(large-size) {
-        font-size: $wow-fs-heading-1;
+        font-size: $wow-fsize-heading-l;
     }
 }
 
 .u-heading-2 {
-    font-size: $wow-fs-heading-2;
+    font-size: $wow-fsize-heading-m;
     line-height: 9.4rem;
 }
 
 .u-heading-3 {
-    font-size: $wow-fs-heading-3;
+    font-size: $wow-fsize-heading-s;
     line-height: 5.6rem;
 }
 
 .u-paragraph-normal {
-    font-family: $wow-f-paragraph;
+    font-family: $wow-font-paragraph;
     font-style: normal;
     font-weight: normal;
-    font-size: $wow-fs-paragraph-m * 0.75;
-    line-height: 2.1rem * 0.75;
+    font-size: $wow-fsize-paragraph-m;
     text-align: center;
 
     @include responsive(medium-size) {
-        line-height: 2.1rem;
-        font-size: $wow-fs-paragraph-m;
+        font-size: $wow-fsize-paragraph-l;
     }
 }
 
 .u-paragraph-italic {
-    font-family: $wow-f-paragraph;
+    font-family: $wow-font-paragraph;
     font-style: italic;
     font-weight: 500;
-    font-size: $wow-fs-paragraph-s;
-    line-height: 1.6rem;
+    font-size: $wow-fsize-paragraph-m;
     text-align: center;
 }
 
 .u-separator {
     width: 8.4rem;
     height: 0.2rem;
-    background: $wow-c-hard;
+    background: $wow-color-red;
 }
