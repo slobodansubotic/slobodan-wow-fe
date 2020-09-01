@@ -10,10 +10,10 @@
     padding-inline-end: 3rem;
 
     color: $wow-color-primary;
-    background: url(../../assets/images/hero.png) no-repeat top center;
+    background: url(../assets/images/hero.png) no-repeat top center;
     background-size: cover;
 
-    @include responsive(small-size) {
+    @include mq($laptop, min) {
         padding-block-end: 22rem;
         padding-block-start: 22rem;
     }
@@ -27,7 +27,7 @@
     display: block;
     color: $wow-color-secondary;
 
-    @include responsive(small-size) {
+    @include mq($tablet-portrait, min) {
         display: inline-block;
         padding-inline-end: 0.25em;
         border-inline-end: 1px solid #ffb86c;
@@ -49,8 +49,8 @@
     text-align: center;
     text-transform: uppercase;
     border-block-end: 0.2rem solid $wow-color-red;
-    
-    @include responsive(small-size) {
+
+    @include mq($laptop, min) {
         position: absolute;
         left: 14rem;
         bottom: 14rem;

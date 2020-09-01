@@ -11,37 +11,37 @@ html, body {
 
 @font-face {
   font-family: 'Cairo';
-  src: url(../../assets/fonts/Cairo/Cairo-Bold.ttf) format("truetype");
+  src: url(../assets/fonts/Cairo/Cairo-Bold.ttf) format("truetype");
   font-weight: 700;
   font-style: normal; }
 
 @font-face {
   font-family: 'Roboto';
-  src: url(../../assets/fonts/Roboto/Roboto-Light.ttf) format("truetype");
+  src: url(../assets/fonts/Roboto/Roboto-Light.ttf) format("truetype");
   font-weight: 300;
   font-style: normal; }
 
 @font-face {
   font-family: 'Roboto';
-  src: url(../../assets/fonts/Roboto/Roboto-Regular.ttf) format("truetype");
+  src: url(../assets/fonts/Roboto/Roboto-Regular.ttf) format("truetype");
   font-weight: 400;
   font-style: normal; }
 
 @font-face {
   font-family: 'Roboto';
-  src: url(../../assets/fonts/Roboto/Roboto-Medium.ttf) format("truetype");
+  src: url(../assets/fonts/Roboto/Roboto-Medium.ttf) format("truetype");
   font-weight: 500;
   font-style: normal; }
 
 @font-face {
   font-family: 'Roboto';
-  src: url(../../assets/fonts/Roboto/Roboto-MediumItalic.ttf) format("truetype");
+  src: url(../assets/fonts/Roboto/Roboto-MediumItalic.ttf) format("truetype");
   font-weight: 500;
   font-style: italic; }
 
 @font-face {
   font-family: 'Roboto';
-  src: url(../../assets/fonts/Roboto/Roboto-Bold.ttf) format("truetype");
+  src: url(../assets/fonts/Roboto/Roboto-Bold.ttf) format("truetype");
   font-weight: 700;
   font-style: normal; }
 
@@ -51,6 +51,25 @@ html, body {
     m   ->  medium
     s   ->  small
 */
+/*
+	Example:
+	-------------------------------------------------------------------------------------------------
+	@include mq($phone) 			 	@media screen and (max-width: 640px)
+	-------------------------------------------------------------------------------------------------
+	@include mq(991) 			 	 	@media screen and (max-width: 991px)
+	-------------------------------------------------------------------------------------------------
+	@include mq($phone + 1, min) 	 	@media screen and (min-width: 641px)
+	-------------------------------------------------------------------------------------------------
+	@include mq(992, min) 			 	@media screen and (min-width: 992px)
+	-------------------------------------------------------------------------------------------------
+	@include mq(400, min, height) 	 	@media screen and (min-height: 400px)
+	-------------------------------------------------------------------------------------------------
+	@include mq(992) {				 	@media screen and (max-width: 992px) and (min-width: 767px)
+		@include mq(767, min) {
+		}
+	}
+	-------------------------------------------------------------------------------------------------
+ */
 .hero {
   position: relative;
   display: flex;
@@ -61,9 +80,9 @@ html, body {
   padding-inline-start: 3rem;
   padding-inline-end: 3rem;
   color: #fff;
-  background: url(../../assets/images/hero.png) no-repeat top center;
+  background: url(../assets/images/hero.png) no-repeat top center;
   background-size: cover; }
-  @media (min-width: 800px) {
+  @media screen and (min-width: 1200px) {
     .hero {
       padding-block-end: 22rem;
       padding-block-start: 22rem; } }
@@ -74,7 +93,7 @@ html, body {
 .hero__heading-prefix {
   display: block;
   color: #bcbcbc; }
-  @media (min-width: 800px) {
+  @media screen and (min-width: 600px) {
     .hero__heading-prefix {
       display: inline-block;
       padding-inline-end: 0.25em;
@@ -94,7 +113,7 @@ html, body {
   text-align: center;
   text-transform: uppercase;
   border-block-end: 0.2rem solid #e74315; }
-  @media (min-width: 800px) {
+  @media screen and (min-width: 1200px) {
     .hero__scroll {
       position: absolute;
       left: 14rem;
@@ -112,10 +131,10 @@ html, body {
 .u-heading-1 {
   font-size: 3rem;
   line-height: 1.2em; }
-  @media (min-width: 1100px) {
+  @media screen and (min-width: 1200px) {
     .u-heading-1 {
       font-size: 5rem; } }
-  @media (min-width: 1600px) {
+  @media screen and (min-width: 1500px) {
     .u-heading-1 {
       font-size: 6rem; } }
 
@@ -133,7 +152,7 @@ html, body {
   font-weight: normal;
   font-size: 1.4rem;
   text-align: center; }
-  @media (min-width: 1100px) {
+  @media screen and (min-width: 1200px) {
     .u-paragraph-normal {
       font-size: 1.8rem; } }
 

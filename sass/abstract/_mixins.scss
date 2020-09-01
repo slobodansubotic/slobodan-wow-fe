@@ -1,21 +1,25 @@
-@mixin responsive($screenSize) {
-    @if $screenSize == large-size {
-        @media (min-width: 1600px) { @content; }
-    }
-    
-    @else if $screenSize == medium-size {
-        @media (min-width: 1100px) { @content; }
-    }
-    
-    @else if $screenSize == small-size {
-        @media (min-width: 800px) { @content; }
-    }
-    
-    @else if $screenSize == extra-small-size {
-        @media (min-width: 400px) { @content; }
-    }
-    
-    @else {
-        @warn "Responsive mixin supports: large-size, medium-size, small-size, extra-small-size.";
+@mixin mq($value, $constraint: max, $feature: width) {
+    @media screen and (#{$constraint}-#{$feature}: $value + px) {
+        @content;
     }
 }
+
+/*
+	Example:
+	-------------------------------------------------------------------------------------------------
+	@include mq($phone) 			 	@media screen and (max-width: 640px)
+	-------------------------------------------------------------------------------------------------
+	@include mq(991) 			 	 	@media screen and (max-width: 991px)
+	-------------------------------------------------------------------------------------------------
+	@include mq($phone + 1, min) 	 	@media screen and (min-width: 641px)
+	-------------------------------------------------------------------------------------------------
+	@include mq(992, min) 			 	@media screen and (min-width: 992px)
+	-------------------------------------------------------------------------------------------------
+	@include mq(400, min, height) 	 	@media screen and (min-height: 400px)
+	-------------------------------------------------------------------------------------------------
+	@include mq(992) {				 	@media screen and (max-width: 992px) and (min-width: 767px)
+		@include mq(767, min) {
+		}
+	}
+	-------------------------------------------------------------------------------------------------
+ */

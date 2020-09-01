@@ -10,11 +10,11 @@
     font-size: $wow-fsize-heading-s;
     line-height: 1.2em;    
 
-    @include responsive(medium-size) {
+    @include mq($laptop, min) {
         font-size: $wow-fsize-heading-m;
     }
 
-    @include responsive(large-size) {
+    @include mq($desktop, min) {
         font-size: $wow-fsize-heading-l;
     }
 }
@@ -36,7 +36,7 @@
     font-size: $wow-fsize-paragraph-m;
     text-align: center;
 
-    @include responsive(medium-size) {
+    @include mq($laptop, min) {
         font-size: $wow-fsize-paragraph-l;
     }
 }
