@@ -1,0 +1,41 @@
+.u-heading-1 {
+    font-family: $wow-f-heading;
+    font-style: normal;
+    font-weight: bold;
+    font-size: $wow-fs-heading-1;
+    line-height: 11.2rem;
+}
+
+.u-heading-2 {
+    font-family: $wow-f-heading;
+    font-style: normal;
+    font-weight: bold;
+    font-size: $wow-fs-heading-2;
+    line-height: 9.4rem;
+}
+
+.u-heading-3 {
+    font-family: $wow-f-heading;
+    font-style: normal;
+    font-weight: bold;
+    font-size: $wow-fs-heading-3;
+    line-height: 5.6rem;
+}
+
+.u-paragraph-normal {
+    font-family: $wow-f-paragraph;
+    font-style: normal;
+    font-weight: normal;
+    font-size: $wow-fs-paragraph-m;
+    line-height: 2.1rem;
+    text-align: center;
+}
+
+.u-paragraph-italic {
+    font-family: $wow-f-paragraph;
+    font-style: italic;
+    font-weight: 500;
+    font-size: $wow-fs-paragraph-s;
+    line-height: 1.6rem;
+    text-align: center;
+}

@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none; }
+
+html, body {
+  font-size: 10px; }
+
+@font-face {
+  font-family: 'Cairo';
+  src: url(../../assets/fonts/Cairo/Cairo-Bold.ttf) format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(../../assets/fonts/Roboto/Roboto-Regular.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(../../assets/fonts/Roboto/Roboto-Bold.ttf) format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(../../assets/fonts/Roboto/Roboto-Medium.ttf) format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(../../assets/fonts/Roboto/Roboto-MediumItalic.ttf) format("truetype");
+  font-weight: 500;
+  font-style: italic; }
+
+/*
+    wow -> world of warcraft
+    f   ->  font
+    fs  ->  font size
+    c   ->  color
+    fc  ->  font color
+    m   ->  medium
+    s   ->  small
+*/
+.u-heading-1 {
+  font-family: "Cairo", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 6rem;
+  line-height: 11.2rem; }
+
+.u-heading-2 {
+  font-family: "Cairo", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 5rem;
+  line-height: 9.4rem; }
+
+.u-heading-3 {
+  font-family: "Cairo", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 5.6rem; }
+
+.u-paragraph-normal {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  text-align: center; }
+
+.u-paragraph-italic {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  text-align: center; }

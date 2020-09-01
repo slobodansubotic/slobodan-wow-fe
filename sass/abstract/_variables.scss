@@ -1,0 +1,27 @@
+/*
+    wow -> world of warcraft
+    f   ->  font
+    fs  ->  font size
+    c   ->  color
+    fc  ->  font color
+    m   ->  medium
+    s   ->  small
+*/
+
+$wow-f-heading: 'Cairo', sans-serif;
+$wow-f-paragraph: 'Roboto', sans-serif;
+
+$wow-fs-paragraph-m: 1.8rem;
+$wow-fs-paragraph-s: 1.4rem;
+
+$wow-fs-heading-1: 6rem;
+$wow-fs-heading-2: 5rem;
+$wow-fs-heading-3: 3rem;
+
+$wow-fc-primary: #FFFFFF;
+$wow-fc-secondary: #BCBCBC;
+$wow-fc-accent: #00FFF0;
+
+$wow-c-easy: #50FA7B;
+$wow-c-medium: #FFB86C;
+$wow-c-hard: #E74315;
