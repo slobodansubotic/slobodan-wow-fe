@@ -4,6 +4,9 @@
   box-sizing: border-box;
   text-decoration: none; }
 
+html body {
+  font-size: 10px; }
+
 @font-face {
   font-family: 'Cairo';
   src: url(../../assets/fonts/Cairo/Cairo-Bold.ttf) format("truetype");
@@ -34,39 +37,48 @@
   font-weight: 500;
   font-style: italic; }
 
+/*
+    wow -> world of warcraft
+    f   ->  font
+    fs  ->  font size
+    c   ->  color
+    fc  ->  font color
+    m   ->  medium
+    s   ->  small
+*/
 .u-heading-1 {
   font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 60px;
-  line-height: 112px; }
+  font-size: 6rem;
+  line-height: 11.2rem; }
 
 .u-heading-2 {
   font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 50px;
-  line-height: 94px; }
+  font-size: 5rem;
+  line-height: 9.4rem; }
 
 .u-heading-3 {
   font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 30px;
-  line-height: 56px; }
+  font-size: 3rem;
+  line-height: 5.6rem; }
 
 .u-paragraph-normal {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
   text-align: center; }
 
 .u-paragraph-italic {
   font-family: "Roboto", sans-serif;
   font-style: italic;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
   text-align: center; }

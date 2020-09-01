@@ -1,4 +1,9 @@
 @import 'base/reset';
-@import 'base/typefaces';
-@import 'base/variables';
-@import 'base/utilities';
+@import 'base/base';
+@import 'base/typography';
+@import 'abstract/variables';
+@import 'abstract/mixins';
+@import 'pages/pages';
+@import 'partials/utilities';
+@import 'partials/overrides';
+@import 'partials/schemes';
