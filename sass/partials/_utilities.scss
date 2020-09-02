@@ -4,37 +4,57 @@
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
+    line-height: 1.2em;  
 }
 
 .u-heading-1 {
-    font-size: $wow-fsize-heading-s;
-    line-height: 1.2em;    
+    font-size: $wow-fsize-heading-xs;      
 
-    @include mq($laptop, min) {
+    @include mq($tablet-portrait, min) {
+        font-size: $wow-fsize-heading-s;
+    }
+
+    @include mq($tablet-landscape, min) {
         font-size: $wow-fsize-heading-m;
     }
 
-    @include mq($desktop, min) {
+    @include mq($laptop, min) {
         font-size: $wow-fsize-heading-l;
+    }
+
+    @include mq($desktop, min) {
+        font-size: $wow-fsize-heading-xl;
     }
 }
 
 .u-heading-2 {
-    font-size: $wow-fsize-heading-m;
-    line-height: 9.4rem;
+    font-size: $wow-fsize-heading-s;
+    color: $wow-color-primary;
+
+    @include mq($tablet-landscape, min) {
+        font-size: $wow-fsize-heading-m;
+    }
+
+    @include mq($laptop, min) {
+        font-size: $wow-fsize-heading-l;
+    }
 }
 
 .u-heading-3 {
-    font-size: $wow-fsize-heading-s;
-    line-height: 5.6rem;
+    font-size: $wow-fsize-heading-xs;
+    color: $wow-color-secondary;
 }
 
 .u-paragraph-normal {
     font-family: $wow-font-paragraph;
     font-style: normal;
     font-weight: normal;
-    font-size: $wow-fsize-paragraph-m;
+    font-size: $wow-fsize-paragraph-s;
     text-align: center;
+
+    @include mq($tablet-portrait, min) {
+        font-size: $wow-fsize-paragraph-m;
+    }
 
     @include mq($laptop, min) {
         font-size: $wow-fsize-paragraph-l;
@@ -53,4 +73,10 @@
     width: 8.4rem;
     height: 0.2rem;
     background: $wow-color-red;
+}
+
+.u-separator-wide {
+    width: 60%;
+    height: 0.1rem;
+    background-color: #6f6f6f;
 }

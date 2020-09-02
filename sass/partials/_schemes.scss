@@ -19,3 +19,54 @@
         }
     }
 }
+
+
+.difficulties {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include mq($tablet-portrait, min) {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    p {
+        width: 10em;
+        font-family: Roboto, sans-serif;
+        color: $wow-color-primary;
+        text-align: center;
+        line-height: 2.4em;
+        font-size: $wow-fsize-paragraph-s;
+        background-color: $wow-color-green;
+
+        @include mq($tablet-landscape, min) {
+            font-size: $wow-fsize-paragraph-m;
+        }
+
+        @include mq($laptop, min) {
+            font-size: $wow-fsize-paragraph-l;
+        }
+
+        &:not(:last-child) {
+            margin-block-end: 1.2em;
+
+            @include mq($tablet-portrait, min) {
+                margin-block-end: 0;
+                margin-inline-end: 1.2em;
+            }
+        }
+            
+        &:nth-child(1) {
+            background-color: $wow-color-green;
+        }
+
+        &:nth-child(2) {
+            background-color: $wow-color-orange;
+        }
+
+        &:nth-child(3) {
+            background-color: $wow-color-red;
+        }  
+    }  
+}

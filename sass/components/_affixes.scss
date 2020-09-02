@@ -1,0 +1,20 @@
+.affixes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $wow-color-primary;
+}
+
+.affixes__be-margin {
+    margin-block-end: 2.5rem;
+
+    @include mq($laptop, min) {
+        margin-block-end: 4rem;
+    }
+}
+
+// I need two sections to have the same background.
+.affixes__background-wrapper {
+    background: url(../assets/images/affixes.png) no-repeat top center;
+    background-size: cover;
+}
