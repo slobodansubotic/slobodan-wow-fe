@@ -3,9 +3,11 @@
 @import 'base/typography';
 @import 'abstract/variables';
 @import 'abstract/mixins';
-@import 'components/hero';
-@import 'components/affixes';
-@import 'components/affixes-intro';
+@import 'components/c-hero';
+@import 'components/c-affixes';
+@import 'components/c-affixes-intro';
+@import 'components/c-affixes-level-two';
+@import 'components/c-affix-card';
 @import 'layout/layouts';
 @import 'pages/pages';
 @import 'partials/utilities';

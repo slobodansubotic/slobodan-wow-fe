@@ -15,8 +15,4 @@
         padding-inline-start: 25%;
         padding-inline-end: 25%;
     }
-    
-    @include mq($laptop, min) {
-        padding-block-start: 6rem;
-    }
 }
