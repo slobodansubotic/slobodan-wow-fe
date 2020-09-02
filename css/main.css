@@ -1,6 +1,8 @@
 * {
   margin: 0;
-  padding: 0;
+  padding: 0; }
+
+* {
   box-sizing: border-box;
   text-decoration: none; }
 
@@ -9,76 +11,172 @@ html, body {
 
 @font-face {
   font-family: 'Cairo';
-  src: url(../../assets/fonts/Cairo/Cairo-Bold.ttf) format("truetype");
+  src: url(../assets/fonts/Cairo/Cairo-Bold.ttf) format("truetype");
   font-weight: 700;
   font-style: normal; }
 
 @font-face {
   font-family: 'Roboto';
-  src: url(../../assets/fonts/Roboto/Roboto-Regular.ttf) format("truetype");
+  src: url(../assets/fonts/Roboto/Roboto-Light.ttf) format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(../assets/fonts/Roboto/Roboto-Regular.ttf) format("truetype");
   font-weight: 400;
   font-style: normal; }
 
 @font-face {
   font-family: 'Roboto';
-  src: url(../../assets/fonts/Roboto/Roboto-Bold.ttf) format("truetype");
-  font-weight: 700;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Roboto';
-  src: url(../../assets/fonts/Roboto/Roboto-Medium.ttf) format("truetype");
+  src: url(../assets/fonts/Roboto/Roboto-Medium.ttf) format("truetype");
   font-weight: 500;
   font-style: normal; }
 
 @font-face {
   font-family: 'Roboto';
-  src: url(../../assets/fonts/Roboto/Roboto-MediumItalic.ttf) format("truetype");
+  src: url(../assets/fonts/Roboto/Roboto-MediumItalic.ttf) format("truetype");
   font-weight: 500;
   font-style: italic; }
 
+@font-face {
+  font-family: 'Roboto';
+  src: url(../assets/fonts/Roboto/Roboto-Bold.ttf) format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+
 /*
     wow -> world of warcraft
-    f   ->  font
-    fs  ->  font size
-    c   ->  color
-    fc  ->  font color
+    l   ->  large
     m   ->  medium
     s   ->  small
 */
-.u-heading-1 {
-  font-family: "Cairo", sans-serif;
+/*
+	Example:
+	-------------------------------------------------------------------------------------------------
+	@include mq($phone) 			 	@media screen and (max-width: 640px)
+	-------------------------------------------------------------------------------------------------
+	@include mq(991) 			 	 	@media screen and (max-width: 991px)
+	-------------------------------------------------------------------------------------------------
+	@include mq($phone + 1, min) 	 	@media screen and (min-width: 641px)
+	-------------------------------------------------------------------------------------------------
+	@include mq(992, min) 			 	@media screen and (min-width: 992px)
+	-------------------------------------------------------------------------------------------------
+	@include mq(400, min, height) 	 	@media screen and (min-height: 400px)
+	-------------------------------------------------------------------------------------------------
+	@include mq(992) {				 	@media screen and (max-width: 992px) and (min-width: 767px)
+		@include mq(767, min) {
+		}
+	}
+	-------------------------------------------------------------------------------------------------
+ */
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100vh;
+  padding-inline-start: 3rem;
+  padding-inline-end: 3rem;
+  color: #fff;
+  background: url(../assets/images/hero.png) no-repeat top center;
+  background-size: cover; }
+  @media screen and (min-width: 1200px) {
+    .hero {
+      padding-block-end: 22rem;
+      padding-block-start: 22rem; } }
+
+.hero__separator {
+  margin-block-start: 1em; }
+
+.hero__heading-prefix {
+  display: block;
+  color: #bcbcbc; }
+  @media screen and (min-width: 600px) {
+    .hero__heading-prefix {
+      display: inline-block;
+      padding-inline-end: 0.25em;
+      border-inline-end: 1px solid #ffb86c;
+      line-height: 1em; } }
+
+.hero__color-squares {
+  margin-block-end: 1em; }
+
+.hero__scroll {
+  width: 7.5rem;
+  padding-block-end: 0.8rem;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  text-align: center;
+  text-transform: uppercase;
+  border-block-end: 0.2rem solid #e74315; }
+  @media screen and (min-width: 1200px) {
+    .hero__scroll {
+      position: absolute;
+      left: 14rem;
+      bottom: 14rem;
+      transform: rotateZ(-90deg);
+      text-align: end; } }
+
+.u-heading-1, .u-heading-2, .u-heading-3 {
+  font-family: Cairo, sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 6rem;
-  line-height: 11.2rem; }
+  text-transform: uppercase;
+  text-align: center; }
+
+.u-heading-1 {
+  font-size: 3rem;
+  line-height: 1.2em; }
+  @media screen and (min-width: 1200px) {
+    .u-heading-1 {
+      font-size: 5rem; } }
+  @media screen and (min-width: 1500px) {
+    .u-heading-1 {
+      font-size: 6rem; } }
 
 .u-heading-2 {
-  font-family: "Cairo", sans-serif;
-  font-style: normal;
-  font-weight: bold;
   font-size: 5rem;
   line-height: 9.4rem; }
 
 .u-heading-3 {
-  font-family: "Cairo", sans-serif;
-  font-style: normal;
-  font-weight: bold;
   font-size: 3rem;
   line-height: 5.6rem; }
 
 .u-paragraph-normal {
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 1.8rem;
-  line-height: 2.1rem;
+  font-size: 1.4rem;
   text-align: center; }
+  @media screen and (min-width: 1200px) {
+    .u-paragraph-normal {
+      font-size: 1.8rem; } }
 
 .u-paragraph-italic {
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, sans-serif;
   font-style: italic;
   font-weight: 500;
   font-size: 1.4rem;
-  line-height: 1.6rem;
   text-align: center; }
+
+.u-separator {
+  width: 8.4rem;
+  height: 0.2rem;
+  background: #e74315; }
+
+.three-color-squares {
+  display: flex;
+  justify-content: center; }
+  .three-color-squares span {
+    width: 1.1rem;
+    height: 1.1rem; }
+    .three-color-squares span:nth-child(1) {
+      background-color: #e74315; }
+    .three-color-squares span:nth-child(2) {
+      background-color: #ffb86c; }
+    .three-color-squares span:nth-child(3) {
+      background-color: #50fa7b; }

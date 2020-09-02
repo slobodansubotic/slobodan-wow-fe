@@ -1,27 +1,30 @@
 /*
     wow -> world of warcraft
-    f   ->  font
-    fs  ->  font size
-    c   ->  color
-    fc  ->  font color
+    l   ->  large
     m   ->  medium
     s   ->  small
 */
 
-$wow-f-heading: 'Cairo', sans-serif;
-$wow-f-paragraph: 'Roboto', sans-serif;
+$wow-font-heading: Cairo, sans-serif;
+$wow-font-paragraph: Roboto, sans-serif;
 
-$wow-fs-paragraph-m: 1.8rem;
-$wow-fs-paragraph-s: 1.4rem;
+$wow-fsize-heading-l: 6rem;
+$wow-fsize-heading-m: 5rem;
+$wow-fsize-heading-s: 3rem;
 
-$wow-fs-heading-1: 6rem;
-$wow-fs-heading-2: 5rem;
-$wow-fs-heading-3: 3rem;
+$wow-fsize-paragraph-l: 1.8rem;
+$wow-fsize-paragraph-m: 1.4rem;
+$wow-fsize-paragraph-s: 1rem;
 
-$wow-fc-primary: #FFFFFF;
-$wow-fc-secondary: #BCBCBC;
-$wow-fc-accent: #00FFF0;
+$wow-color-primary: #fff;
+$wow-color-secondary: #bcbcbc;
+$wow-color-accent: #00fff0;
 
-$wow-c-easy: #50FA7B;
-$wow-c-medium: #FFB86C;
-$wow-c-hard: #E74315;
+$wow-color-red: #e74315;
+$wow-color-orange: #ffb86c;
+$wow-color-green: #50fa7b;
+
+$tablet-portrait: 600;
+$tablet-landscape: 900;
+$laptop: 1200;
+$desktop: 1500;

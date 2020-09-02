@@ -1,0 +1,60 @@
+.hero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    height: 100vh;
+    padding-inline-start: 3rem;
+    padding-inline-end: 3rem;
+
+    color: $wow-color-primary;
+    background: url(../assets/images/hero.png) no-repeat top center;
+    background-size: cover;
+
+    @include mq($laptop, min) {
+        padding-block-end: 22rem;
+        padding-block-start: 22rem;
+    }
+}
+
+.hero__separator {
+    margin-block-start: 1em;
+}
+
+.hero__heading-prefix {
+    display: block;
+    color: $wow-color-secondary;
+
+    @include mq($tablet-portrait, min) {
+        display: inline-block;
+        padding-inline-end: 0.25em;
+        border-inline-end: 1px solid #ffb86c;
+        line-height: 1em;
+    }
+}
+
+.hero__color-squares {
+    margin-block-end: 1em;
+}
+
+.hero__scroll {
+    width: 7.5rem;
+    padding-block-end: 0.8rem;
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    text-align: center;
+    text-transform: uppercase;
+    border-block-end: 0.2rem solid $wow-color-red;
+
+    @include mq($laptop, min) {
+        position: absolute;
+        left: 14rem;
+        bottom: 14rem;
+        transform: rotateZ(-90deg);
+        text-align: end;
+    }
+}

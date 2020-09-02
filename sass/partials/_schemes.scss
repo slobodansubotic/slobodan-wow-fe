@@ -1,0 +1,21 @@
+.three-color-squares {
+    display: flex;
+    justify-content: center;
+
+    span {
+        width: 1.1rem;
+        height: 1.1rem;
+
+        &:nth-child(1) {
+            background-color: $wow-color-red;
+        }
+
+        &:nth-child(2) {
+            background-color: $wow-color-orange;
+        }
+
+        &:nth-child(3) {
+            background-color: $wow-color-green;
+        }
+    }
+}
