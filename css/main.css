@@ -147,7 +147,8 @@ html, body {
   align-items: center;
   padding-inline-start: 3rem;
   padding-inline-end: 3rem;
-  padding-block-start: 2rem; }
+  padding-block-start: 2rem;
+  padding-block-end: 2rem; }
   @media screen and (min-width: 600px) {
     .affixes-intro {
       padding-inline-start: 10rem;
@@ -168,6 +169,12 @@ html, body {
   text-align: center;
   text-transform: uppercase;
   color: #bcbcbc; }
+  @media screen and (min-width: 600px) {
+    .affixes-level-two__subtext {
+      font-size: 1.4rem; } }
+  @media screen and (min-width: 1200px) {
+    .affixes-level-two__subtext {
+      font-size: 1.8rem; } }
 
 .affixes-level-two__cards {
   display: grid;

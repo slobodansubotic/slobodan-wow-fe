@@ -10,6 +10,14 @@
     text-align: center;
     text-transform: uppercase;
     color: $wow-color-secondary;
+    
+    @include mq($tablet-portrait, min) {
+        font-size: $wow-fsize-paragraph-m;
+    }
+
+    @include mq($laptop, min) {
+        font-size: $wow-fsize-paragraph-l;
+    }
 }
 
 .affixes-level-two__cards {
