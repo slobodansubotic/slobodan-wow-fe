@@ -1,0 +1,22 @@
+.affixes-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline-start: 3rem;
+    padding-inline-end: 3rem;
+    padding-block-start: 2rem;
+
+    @include mq($tablet-portrait, min) {
+        padding-inline-start: 10rem;
+        padding-inline-end: 10rem;
+    }
+
+    @include mq($tablet-landscape, min) {
+        padding-inline-start: 25%;
+        padding-inline-end: 25%;
+    }
+    
+    @include mq($laptop, min) {
+        padding-block-start: 6rem;
+    }
+}

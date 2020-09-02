@@ -8,13 +8,15 @@
 $wow-font-heading: Cairo, sans-serif;
 $wow-font-paragraph: Roboto, sans-serif;
 
-$wow-fsize-heading-l: 6rem;
-$wow-fsize-heading-m: 5rem;
+$wow-fsize-heading-xl: 6rem;
+$wow-fsize-heading-l: 5rem;
+$wow-fsize-heading-m: 4rem;
 $wow-fsize-heading-s: 3rem;
+$wow-fsize-heading-xs: 2rem;
 
 $wow-fsize-paragraph-l: 1.8rem;
 $wow-fsize-paragraph-m: 1.4rem;
-$wow-fsize-paragraph-s: 1rem;
+$wow-fsize-paragraph-s: 1.2rem;
 
 $wow-color-primary: #fff;
 $wow-color-secondary: #bcbcbc;
@@ -23,6 +25,8 @@ $wow-color-accent: #00fff0;
 $wow-color-red: #e74315;
 $wow-color-orange: #ffb86c;
 $wow-color-green: #50fa7b;
+
+$wow-color-grey-mid: #6f6f6f;
 
 $tablet-portrait: 600;
 $tablet-landscape: 900;

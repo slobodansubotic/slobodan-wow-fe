@@ -121,16 +121,61 @@ html, body {
       transform: rotateZ(-90deg);
       text-align: end; } }
 
+.affixes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff; }
+
+.affixes__be-margin {
+  margin-block-end: 2.5rem; }
+  @media screen and (min-width: 1200px) {
+    .affixes__be-margin {
+      margin-block-end: 4rem; } }
+
+.affixes__background-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background: url(../assets/images/affixes.png) no-repeat top center;
+  background-size: cover; }
+
+.affixes-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-inline-start: 3rem;
+  padding-inline-end: 3rem;
+  padding-block-start: 2rem; }
+  @media screen and (min-width: 600px) {
+    .affixes-intro {
+      padding-inline-start: 10rem;
+      padding-inline-end: 10rem; } }
+  @media screen and (min-width: 900px) {
+    .affixes-intro {
+      padding-inline-start: 25%;
+      padding-inline-end: 25%; } }
+  @media screen and (min-width: 1200px) {
+    .affixes-intro {
+      padding-block-start: 6rem; } }
+
 .u-heading-1, .u-heading-2, .u-heading-3 {
   font-family: Cairo, sans-serif;
   font-style: normal;
   font-weight: bold;
   text-transform: uppercase;
-  text-align: center; }
+  text-align: center;
+  line-height: 1.2em; }
 
 .u-heading-1 {
-  font-size: 3rem;
-  line-height: 1.2em; }
+  font-size: 2rem; }
+  @media screen and (min-width: 600px) {
+    .u-heading-1 {
+      font-size: 3rem; } }
+  @media screen and (min-width: 900px) {
+    .u-heading-1 {
+      font-size: 4rem; } }
   @media screen and (min-width: 1200px) {
     .u-heading-1 {
       font-size: 5rem; } }
@@ -139,19 +184,28 @@ html, body {
       font-size: 6rem; } }
 
 .u-heading-2 {
-  font-size: 5rem;
-  line-height: 9.4rem; }
+  font-size: 3rem;
+  color: #fff; }
+  @media screen and (min-width: 900px) {
+    .u-heading-2 {
+      font-size: 4rem; } }
+  @media screen and (min-width: 1200px) {
+    .u-heading-2 {
+      font-size: 5rem; } }
 
 .u-heading-3 {
-  font-size: 3rem;
-  line-height: 5.6rem; }
+  font-size: 2rem;
+  color: #bcbcbc; }
 
 .u-paragraph-normal {
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   text-align: center; }
+  @media screen and (min-width: 600px) {
+    .u-paragraph-normal {
+      font-size: 1.4rem; } }
   @media screen and (min-width: 1200px) {
     .u-paragraph-normal {
       font-size: 1.8rem; } }
@@ -168,6 +222,11 @@ html, body {
   height: 0.2rem;
   background: #e74315; }
 
+.u-separator-wide {
+  width: 60%;
+  height: 0.1rem;
+  background-color: #6f6f6f; }
+
 .three-color-squares {
   display: flex;
   justify-content: center; }
@@ -180,3 +239,38 @@ html, body {
       background-color: #ffb86c; }
     .three-color-squares span:nth-child(3) {
       background-color: #50fa7b; }
+
+.difficulties {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  @media screen and (min-width: 600px) {
+    .difficulties {
+      flex-direction: row;
+      justify-content: center; } }
+  .difficulties p {
+    width: 10em;
+    font-family: Roboto, sans-serif;
+    color: #fff;
+    text-align: center;
+    line-height: 2.4em;
+    font-size: 1.2rem;
+    background-color: #50fa7b; }
+    @media screen and (min-width: 900px) {
+      .difficulties p {
+        font-size: 1.4rem; } }
+    @media screen and (min-width: 1200px) {
+      .difficulties p {
+        font-size: 1.8rem; } }
+    .difficulties p:not(:last-child) {
+      margin-block-end: 1.2em; }
+      @media screen and (min-width: 600px) {
+        .difficulties p:not(:last-child) {
+          margin-block-end: 0;
+          margin-inline-end: 1.2em; } }
+    .difficulties p:nth-child(1) {
+      background-color: #50fa7b; }
+    .difficulties p:nth-child(2) {
+      background-color: #ffb86c; }
+    .difficulties p:nth-child(3) {
+      background-color: #e74315; }
