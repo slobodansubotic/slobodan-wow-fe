@@ -1,0 +1,18 @@
+.l-grid-two {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1.5rem;
+  padding-block-start: 2rem;
+  padding-block-end: 2rem;
+  padding-inline-start: 2rem;
+  padding-inline-end: 2rem;
+
+  @include mq($tablet-portrait, min) {
+    grid-template-columns: repeat(2, minmax(min-content, 49rem));
+    grid-gap: 3rem;
+    padding-block-start: 4rem;
+    padding-block-end: 4rem;
+    padding-inline-start: 4rem;
+    padding-inline-end: 4rem;
+  }
+}

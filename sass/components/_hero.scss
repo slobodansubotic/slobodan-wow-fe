@@ -1,4 +1,4 @@
-.hero {
+.c-hero {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -19,11 +19,11 @@
     }
 }
 
-.hero__separator {
+.c-hero__separator {
     margin-block-start: 1em;
 }
 
-.hero__heading-prefix {
+.c-hero__heading-prefix {
     display: block;
     color: $wow-color-secondary;
 
@@ -35,11 +35,11 @@
     }
 }
 
-.hero__color-squares {
+.c-hero__color-squares {
     margin-block-end: 1em;
 }
 
-.hero__scroll {
+.c-hero__scroll {
     width: 7.5rem;
     padding-block-end: 0.8rem;
     font-family: Roboto, sans-serif;

@@ -1,153 +1,171 @@
 .u-heading-l, .u-heading-m, .u-heading-s {
-    font-family: $wow-font-heading;
-    font-style: normal;
-    font-weight: bold;
-    text-align: center;
-    line-height: 1.2em;  
+  font-family: $wow-font-heading;
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.2em;  
 }
 
 .u-heading-l {
-    font-size: $wow-fsize-heading-xs;
-    text-transform: uppercase;
+  font-size: $wow-fsize-heading-xs;
+  text-transform: uppercase;
 
-    @include mq($tablet-portrait, min) {
-        font-size: $wow-fsize-heading-s;
-    }
+  @include mq($tablet-portrait, min) {
+    font-size: $wow-fsize-heading-s;
+  }
 
-    @include mq($tablet-landscape, min) {
-        font-size: $wow-fsize-heading-m;
-    }
+  @include mq($tablet-landscape, min) {
+    font-size: $wow-fsize-heading-m;
+  }
 
-    @include mq($laptop, min) {
-        font-size: $wow-fsize-heading-l;
-    }
+  @include mq($laptop, min) {
+    font-size: $wow-fsize-heading-l;
+  }
 
-    @include mq($desktop, min) {
-        font-size: $wow-fsize-heading-xl;
-    }
+  @include mq($desktop, min) {
+    font-size: $wow-fsize-heading-xl;
+  }
 }
 
 .u-heading-m {
-    font-size: $wow-fsize-heading-s;
-    color: $wow-color-primary;
-    text-transform: uppercase;
+  font-size: $wow-fsize-heading-s;
+  color: $wow-color-primary;
+  text-transform: uppercase;
 
-    @include mq($tablet-landscape, min) {
-        font-size: $wow-fsize-heading-m;
-    }
+  @include mq($tablet-landscape, min) {
+    font-size: $wow-fsize-heading-m;
+  }
 
-    @include mq($laptop, min) {
-        font-size: $wow-fsize-heading-l;
-    }
+  @include mq($laptop, min) {
+    font-size: $wow-fsize-heading-l;
+  }
 }
 
 .u-heading-s {
-    font-size: $wow-fsize-heading-xs;
+  font-size: $wow-fsize-heading-xs;
 
-    @include mq($laptop, min) {
-        font-size: $wow-fsize-heading-s;
-    }
+  @include mq($laptop, min) {
+    font-size: $wow-fsize-heading-s;
+  }
 }
 
 .u-heading-s--grey {
-    color: $wow-color-secondary;
+  color: $wow-color-secondary;
 }
 
 .u-heading-s--red {
-    color: $wow-color-red;
+  color: $wow-color-red;
 }
 
 .u-heading-s--orange {
-    color: $wow-color-orange;
+  color: $wow-color-orange;
 }
 
 .u-heading-s--green {
-    color: $wow-color-green;
+  color: $wow-color-green;
 }
 
 .u-heading-s--uppercase {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .u-paragraph-normal {
-    font-family: $wow-font-paragraph;
-    font-style: normal;
-    font-weight: normal;
-    font-size: $wow-fsize-paragraph-s;
-    text-align: center;
+  font-family: $wow-font-paragraph;
+  font-style: normal;
+  font-weight: normal;
+  font-size: $wow-fsize-paragraph-s;
+  text-align: center;
 
-    @include mq($tablet-portrait, min) {
-        font-size: $wow-fsize-paragraph-m;
-    }
+  @include mq($tablet-portrait, min) {
+    font-size: $wow-fsize-paragraph-m;
+  }
 
-    @include mq($laptop, min) {
-        font-size: $wow-fsize-paragraph-l;
-    }
+  @include mq($laptop, min) {
+    font-size: $wow-fsize-paragraph-l;
+  }
 }
 
 .u-paragraph-italic {
-    font-family: $wow-font-paragraph;
-    font-style: italic;
-    font-weight: 500;
-    font-size: $wow-fsize-paragraph-xs;
-    text-align: center;
-    
-    @include mq($tablet-portrait, min) {
-        font-size: $wow-fsize-paragraph-s;
-    }
+  font-family: $wow-font-paragraph;
+  font-style: italic;
+  font-weight: 500;
+  font-size: $wow-fsize-paragraph-xs;
+  text-align: center;
+  
+  @include mq($tablet-portrait, min) {
+    font-size: $wow-fsize-paragraph-s;
+  }
 
-    @include mq($laptop, min) {
-        font-size: $wow-fsize-paragraph-m;
-    }
+  @include mq($laptop, min) {
+    font-size: $wow-fsize-paragraph-m;
+  }
 }
 
 .u-separator {
-    width: 6rem;
-    height: 0.1rem;
+  width: 6rem;
+  height: 0.1rem;
 
-    @include mq($tablet-portrait, min) {
-        width: 8.4rem;
-        height: 0.2rem;
-    }
+  @include mq($tablet-portrait, min) {
+      width: 8.4rem;
+      height: 0.2rem;
+  }
 }
 
 .u-separator--red {
-    background: $wow-color-red;
+  background: $wow-color-red;
 }
 
 .u-separator--orange {
-    background: $wow-color-orange;
+  background: $wow-color-orange;
 }
 
 .u-separator--green {
-    background: $wow-color-green;
+  background: $wow-color-green;
 }
 
 .u-separator-wide {
-    width: 60%;
-    height: 0.1rem;
-    background-color: $wow-color-grey-mid;
+  width: 60%;
+  height: 0.1rem;
+  background-color: $wow-color-grey-one;
 }
 
 /*
-    m   ->  margin
-    b   ->  block
-    e   ->  end
-    md  ->  medium
-    sm  ->  small
+  m   ->  margin
+  b   ->  block
+  e   ->  end
+  md  ->  medium
+  sm  ->  small
 */
 .u-mbe-md {
-    margin-block-end: 2.5rem;
+  margin-block-end: 2.5rem;
 
-    @include mq($laptop, min) {
-        margin-block-end: 4rem;
-    }
+  @include mq($laptop, min) {
+    margin-block-end: 4rem;
+  }
 }
 
 .u-mbe-sm {
-    margin-block-end: 1rem;
+  margin-block-end: 1rem;
 
-    @include mq($laptop, min) {
-        margin-block-end: 2rem;
-    }
+  @include mq($laptop, min) {
+    margin-block-end: 2rem;
+  }
+}
+
+.u-subtext {
+  font-family: $wow-font-paragraph;
+  font-style: italic;
+  font-weight: 500;
+  font-size: $wow-fsize-paragraph-s;
+  text-align: center;
+  text-transform: uppercase;
+  color: $wow-color-secondary;
+
+  @include mq($tablet-portrait, min) {
+    font-size: $wow-fsize-paragraph-m;
+  }
+
+  @include mq($laptop, min) {
+    font-size: $wow-fsize-paragraph-l;
+  }
 }
