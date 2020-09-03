@@ -1,0 +1,18 @@
+.c-affixes-schedule {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-inline-start: 1rem;
+  padding-inline-end: 1rem;
+  max-width: 101rem;
+
+  @include mq($tablet-portrait, min) {
+    padding-inline-start: 5rem;
+    padding-inline-end: 5rem;
+  }
+
+  @include mq($laptop, min) {
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+  }
+}
