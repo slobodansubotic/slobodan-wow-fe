@@ -228,25 +228,6 @@ html, body {
 .affix-card__header--red {
   background-color: #e74315; }
 
-/*
-    m   ->  margin
-    b   ->  block
-    e   ->  end
-    md  ->  medium
-    sm  ->  small
-*/
-.l-mbe-md {
-  margin-block-end: 2.5rem; }
-  @media screen and (min-width: 1200px) {
-    .l-mbe-md {
-      margin-block-end: 4rem; } }
-
-.l-mbe-sm {
-  margin-block-end: 1rem; }
-  @media screen and (min-width: 1200px) {
-    .l-mbe-sm {
-      margin-block-end: 2rem; } }
-
 .u-heading-l, .u-heading-m, .u-heading-s {
   font-family: Cairo, sans-serif;
   font-style: normal;
@@ -349,6 +330,25 @@ html, body {
   width: 60%;
   height: 0.1rem;
   background-color: #6f6f6f; }
+
+/*
+    m   ->  margin
+    b   ->  block
+    e   ->  end
+    md  ->  medium
+    sm  ->  small
+*/
+.u-mbe-md {
+  margin-block-end: 2.5rem; }
+  @media screen and (min-width: 1200px) {
+    .u-mbe-md {
+      margin-block-end: 4rem; } }
+
+.u-mbe-sm {
+  margin-block-end: 1rem; }
+  @media screen and (min-width: 1200px) {
+    .u-mbe-sm {
+      margin-block-end: 2rem; } }
 
 .three-color-squares {
   display: flex;

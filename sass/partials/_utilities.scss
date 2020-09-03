@@ -128,3 +128,26 @@
     height: 0.1rem;
     background-color: $wow-color-grey-mid;
 }
+
+/*
+    m   ->  margin
+    b   ->  block
+    e   ->  end
+    md  ->  medium
+    sm  ->  small
+*/
+.u-mbe-md {
+    margin-block-end: 2.5rem;
+
+    @include mq($laptop, min) {
+        margin-block-end: 4rem;
+    }
+}
+
+.u-mbe-sm {
+    margin-block-end: 1rem;
+
+    @include mq($laptop, min) {
+        margin-block-end: 2rem;
+    }
+}
