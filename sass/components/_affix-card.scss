@@ -1,0 +1,40 @@
+.affix-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block-start: 2rem;
+    padding-block-end: 2rem;
+    padding-inline-start: 3rem;
+    padding-inline-end: 3rem;
+}
+
+.affix-card--normal:hover {
+    background-color: rgba($color: $wow-color-primary, $alpha: .1);
+    box-shadow: 0 0.2rem 4rem rgba($color: $wow-color-black, $alpha: .2);
+}
+
+.affix-card--accent {
+    padding-block-start: 0;
+    background-color: rgba($color: $wow-color-black, $alpha: .5);
+    box-shadow: 0 0.2rem 4rem rgba($color: $wow-color-black, $alpha: .2);
+    border: 0.1rem solid $wow-color-red;
+}
+
+.affix-card__header {
+    font-family: $wow-font-paragraph;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    line-height: 1.6em;
+    width: 9em;
+    text-align: center;
+    border-radius: 0 0 0.6em 0.6em;
+    margin-block-end: 1em;
+
+    @include mq($laptop, min) {
+        font-size: 1.6rem;
+    }
+}
+
+.affix-card__header--red {
+    background-color: $wow-color-red;
+}

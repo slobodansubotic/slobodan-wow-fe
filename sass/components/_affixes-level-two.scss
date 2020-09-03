@@ -1,0 +1,40 @@
+.affixes-level-two {
+    padding-block-start: 2rem;
+}
+
+.affixes-level-two__subtext {
+    font-family: $wow-font-paragraph;
+    font-style: italic;
+    font-weight: 500;
+    font-size: $wow-fsize-paragraph-s;
+    text-align: center;
+    text-transform: uppercase;
+    color: $wow-color-secondary;
+    
+    @include mq($tablet-portrait, min) {
+        font-size: $wow-fsize-paragraph-m;
+    }
+
+    @include mq($laptop, min) {
+        font-size: $wow-fsize-paragraph-l;
+    }
+}
+
+.affixes-level-two__cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1.5rem;
+    padding-block-start: 2rem;
+    padding-block-end: 2rem;
+    padding-inline-start: 2rem;
+    padding-inline-end: 2rem;
+
+    @include mq($tablet-portrait, min) {
+        grid-template-columns: repeat(2, minmax(min-content, 49rem));
+        grid-gap: 3rem;
+        padding-block-start: 4rem;
+        padding-block-end: 4rem;
+        padding-inline-start: 4rem;
+        padding-inline-end: 4rem;
+    }
+}

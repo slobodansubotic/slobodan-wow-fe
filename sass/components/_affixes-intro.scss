@@ -5,6 +5,7 @@
     padding-inline-start: 3rem;
     padding-inline-end: 3rem;
     padding-block-start: 2rem;
+    padding-block-end: 2rem;
 
     @include mq($tablet-portrait, min) {
         padding-inline-start: 10rem;
@@ -14,9 +15,5 @@
     @include mq($tablet-landscape, min) {
         padding-inline-start: 25%;
         padding-inline-end: 25%;
-    }
-    
-    @include mq($laptop, min) {
-        padding-block-start: 6rem;
     }
 }
