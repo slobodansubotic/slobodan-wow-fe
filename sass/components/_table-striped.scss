@@ -1,6 +1,6 @@
 .c-table-striped {
-  border-collapse: collapse;
-  border-spacing: 0;
+  display: grid;
+  grid-template-columns: 1fr;
   font-family: $wow-font-paragraph;
   font-style: normal;
   font-weight: 500;
@@ -17,13 +17,31 @@
   }
 }
 
-.c-table-striped th {
+.c-table-striped__header {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  list-style: none;
   background-color: $wow-color-green;
   color: $wow-color-grey-four;
-  text-align: start;
 }
 
-.c-table-striped th, td {
+.c-table-striped__row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  list-style: none;
+}
+
+.c-table-striped__row:nth-child(odd) {
+  background-color: rgba($color: $wow-color-grey-five, $alpha: 0);
+}
+
+.c-table-striped__row:nth-child(even) {
+  background-color: rgba($color: $wow-color-grey-five, $alpha: 0.2);
+}
+
+.c-table-striped__header > span, .c-table-striped__row > span {
   padding-inline-start: 1em;
 
   @include mq($tablet-portrait, min) {
@@ -35,14 +53,6 @@
   }
 }
 
-.c-table-striped tr:nth-child(odd) {
-  background-color: rgba($color: $wow-color-grey-five, $alpha: 0);
-}
-
-.c-table-striped tr:nth-child(even) {
-  background-color: rgba($color: $wow-color-grey-five, $alpha: 0.2);
-}
-
-.c-table-striped tr:hover {
+.c-table-striped__row:hover {
   background-color: rgba($color: $wow-color-grey-five, $alpha: 0.8);
 }
