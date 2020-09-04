@@ -207,6 +207,9 @@ html, body {
   background-color: #ffb86c; }
 
 .c-affixes-level-two {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
   padding-block-start: 2rem;
   padding-block-end: 2rem; }
   @media screen and (min-width: 1200px) {
@@ -328,6 +331,45 @@ html, body {
   margin-block-end: 0.1em;
   margin-inline-end: 0.5em; }
 
+.c-useful-stuff {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  max-width: 101rem;
+  padding-inline-start: 2rem;
+  padding-inline-end: 2rem;
+  padding-block-start: 3rem; }
+  @media screen and (min-width: 600px) {
+    .c-useful-stuff {
+      padding-inline-start: 7rem;
+      padding-inline-end: 7rem; } }
+  @media screen and (min-width: 1200px) {
+    .c-useful-stuff {
+      padding-inline-start: 0;
+      padding-inline-end: 0;
+      padding-block-start: 6rem; } }
+
+.c-usful-stuff__list {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 4500;
+  font-size: 1.2rem;
+  list-style: none;
+  line-height: 1.5em; }
+  @media screen and (min-width: 600px) {
+    .c-usful-stuff__list {
+      font-size: 1.4rem; } }
+  @media screen and (min-width: 1200px) {
+    .c-usful-stuff__list {
+      font-size: 1.8rem; } }
+
+.c-usful-stuff__list a {
+  color: #00fff0;
+  font-weight: 700; }
+
+.c-usful-stuff__list a:hover {
+  text-decoration: underline; }
+
 .l-grid-two {
   display: grid;
   grid-template-columns: 1fr;
@@ -349,7 +391,6 @@ html, body {
   font-family: Cairo, sans-serif;
   font-style: normal;
   font-weight: bold;
-  text-align: center;
   line-height: 1.2em; }
 
 .u-heading-l {
@@ -403,7 +444,7 @@ html, body {
 .u-paragraph-normal {
   font-family: Roboto, sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 1.2rem;
   text-align: center; }
   @media screen and (min-width: 600px) {
@@ -499,6 +540,9 @@ html, body {
   font-weight: 500;
   font-style: italic;
   text-transform: uppercase; }
+
+.u-self-align-start {
+  justify-self: start; }
 
 .three-color-squares {
   display: flex;
