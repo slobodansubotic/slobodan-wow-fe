@@ -121,16 +121,15 @@ html, body {
       transform: rotateZ(-90deg);
       text-align: end; } }
 
-.c-affixes {
+.c-affixes, .c-affixes__background-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; }
+
+.c-affixes {
   color: #fff; }
 
 .c-affixes__background-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   width: 100%; }
 
 .c-affixes__background-wrapper--one {
@@ -139,6 +138,10 @@ html, body {
 
 .c-affixes__background-wrapper--two {
   background: linear-gradient(180deg, #2d2c2f, #131313); }
+
+.c-affixes__background-wrapper--three {
+  background: url(../assets/images/stuff.png) no-repeat top center;
+  background-size: cover; }
 
 .c-affixes-intro {
   display: flex;
@@ -283,6 +286,47 @@ html, body {
     .c-affixes-schedule {
       padding-inline-start: 0;
       padding-inline-end: 0; } }
+
+.c-group-consideratinos {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  max-width: 101rem;
+  padding-inline-start: 2rem;
+  padding-inline-end: 2rem;
+  padding-block-start: 3rem; }
+  @media screen and (min-width: 600px) {
+    .c-group-consideratinos {
+      padding-inline-start: 7rem;
+      padding-inline-end: 7rem; } }
+  @media screen and (min-width: 1200px) {
+    .c-group-consideratinos {
+      padding-inline-start: 0;
+      padding-inline-end: 0;
+      padding-block-start: 6rem; } }
+
+.c-group-considerations__list {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #bcbcbc;
+  list-style: none; }
+  @media screen and (min-width: 600px) {
+    .c-group-considerations__list {
+      font-size: 1.4rem; } }
+  @media screen and (min-width: 1200px) {
+    .c-group-considerations__list {
+      font-size: 1.8rem; } }
+
+.c-group-considerations__list li::before {
+  content: '';
+  background-color: #50fa7b;
+  display: inline-block;
+  width: 0.4em;
+  height: 0.4em;
+  margin-block-end: 0.1em;
+  margin-inline-end: 0.5em; }
 
 .l-grid-two {
   display: grid;
@@ -432,11 +476,8 @@ html, body {
 
 .u-subtext {
   font-family: Roboto, sans-serif;
-  font-style: italic;
-  font-weight: 500;
   font-size: 1.2rem;
   text-align: center;
-  text-transform: uppercase;
   color: #bcbcbc; }
   @media screen and (min-width: 600px) {
     .u-subtext {
@@ -445,8 +486,19 @@ html, body {
     .u-subtext {
       font-size: 1.8rem; } }
 
-.u-subtext--normal {
-  font-style: normal; }
+.u-subtext--normal-upperc {
+  font-weight: 500;
+  font-style: normal;
+  text-transform: uppercase; }
+
+.u-subtext--normal-bold {
+  font-style: normal;
+  font-weight: 700; }
+
+.u-subtext--italic-upperc {
+  font-weight: 500;
+  font-style: italic;
+  text-transform: uppercase; }
 
 .three-color-squares {
   display: flex;

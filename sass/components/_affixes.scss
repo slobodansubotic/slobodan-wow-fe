@@ -1,15 +1,14 @@
-.c-affixes {
+.c-affixes, .c-affixes__background-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.c-affixes {
     color: $wow-color-primary;
 }
 
-// I need two sections to have the same background.
 .c-affixes__background-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 100%;
 }
 
@@ -20,4 +19,9 @@
 
 .c-affixes__background-wrapper--two {
     background: linear-gradient(180deg, $wow-color-grey-two, $wow-color-grey-three);
+}
+
+.c-affixes__background-wrapper--three {
+    background: url(../assets/images/stuff.png) no-repeat top center;
+    background-size: cover;
 }

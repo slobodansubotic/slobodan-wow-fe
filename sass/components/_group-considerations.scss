@@ -1,0 +1,47 @@
+.c-group-consideratinos {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  max-width: 101rem;
+  padding-inline-start: 2rem;
+  padding-inline-end: 2rem;
+  padding-block-start: 3rem;
+
+  @include mq($tablet-portrait, min) {
+    padding-inline-start: 7rem;
+    padding-inline-end: 7rem;
+  }
+
+  @include mq($laptop, min) {
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    padding-block-start: 6rem;
+  }
+}
+
+.c-group-considerations__list {
+  font-family: $wow-font-paragraph;
+  font-style: normal;
+  font-weight: 700;
+  font-size: $wow-fsize-paragraph-s;
+  color: $wow-color-secondary;
+  list-style: none;
+
+  @include mq($tablet-portrait, min) {
+    font-size: $wow-fsize-paragraph-m;
+  }
+
+  @include mq($laptop, min) {
+    font-size: $wow-fsize-paragraph-l;
+  }
+}
+
+.c-group-considerations__list li::before {
+  content: '';
+  background-color: $wow-color-green;
+  display: inline-block;
+  width: 0.4em;
+  height: 0.4em;
+  margin-block-end: 0.1em;
+  margin-inline-end: 0.5em;
+}
