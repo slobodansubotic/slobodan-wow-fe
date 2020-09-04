@@ -1,0 +1,90 @@
+.c-wow-footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  width: 100%;
+  padding-block-start: 3rem;
+  background-color: $wow-color-black;
+  font-family: $wow-font-paragraph;
+  font-style: normal;
+  
+  @include mq($laptop, min) {
+    padding-block-start: 6rem;
+  }
+}
+
+.c-wow-footer__adresses {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  padding-inline-start: 2em;
+  padding-inline-end: 2em;
+
+  @include mq($tablet-landscape, min) {
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-inline-start: 10%;
+    padding-inline-end: 10%;
+  }
+
+  @include mq($laptop, min) {
+    padding-inline-start: 10%;
+    padding-inline-end: 10%;
+  }
+}
+
+.c-wow-footer > p, .c-wow-footer__adresses p {
+  font-size: $wow-fsize-paragraph-s;
+  line-height: 2em;
+
+  @include mq($tablet-portrait, min) {
+    font-size: $wow-fsize-paragraph-m;
+  }
+
+  @include mq($laptop, min) {
+    font-size: $wow-fsize-paragraph-l;
+  }
+}
+
+.c-wow-footer > p {
+  font-weight: 700;
+}
+
+.c-wow-footer__adresses p {
+  font-weight: 400;
+}
+
+.c-wow-footer__adresses p a {
+  color: $wow-color-accent;
+}
+
+.c-wow-footer__adresses p a:hover {
+  text-decoration: underline;
+}
+
+.c-wow-footer__tm {
+  background-color: $wow-color-grey-four;
+  width: 100%;
+  padding-block-start: 2em;
+  padding-block-end: 2em;
+  padding-inline-start: 2em;
+  padding-inline-end: 2em;
+}
+
+.c-wow-footer__tm p {  
+  font-weight: 400;
+  font-size: $wow-fsize-paragraph-xs;
+  line-height: 1.2em;
+  text-align: center;
+  background-color: $wow-color-grey-four;
+  
+  @include mq($tablet-portrait, min) {
+    font-size: $wow-fsize-paragraph-s;
+  }
+
+  @include mq($laptop, min) {
+    font-size: $wow-fsize-paragraph-m;
+  }
+}

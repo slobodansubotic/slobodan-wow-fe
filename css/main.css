@@ -370,6 +370,81 @@ html, body {
 .c-usful-stuff__list a:hover {
   text-decoration: underline; }
 
+.c-wow-footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  width: 100%;
+  padding-block-start: 3rem;
+  background-color: #000;
+  font-family: Roboto, sans-serif;
+  font-style: normal; }
+  @media screen and (min-width: 1200px) {
+    .c-wow-footer {
+      padding-block-start: 6rem; } }
+
+.c-wow-footer__adresses {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  padding-inline-start: 2em;
+  padding-inline-end: 2em; }
+  @media screen and (min-width: 900px) {
+    .c-wow-footer__adresses {
+      flex-direction: row;
+      justify-content: space-evenly;
+      padding-inline-start: 10%;
+      padding-inline-end: 10%; } }
+  @media screen and (min-width: 1200px) {
+    .c-wow-footer__adresses {
+      padding-inline-start: 10%;
+      padding-inline-end: 10%; } }
+
+.c-wow-footer > p, .c-wow-footer__adresses p {
+  font-size: 1.2rem;
+  line-height: 2em; }
+  @media screen and (min-width: 600px) {
+    .c-wow-footer > p, .c-wow-footer__adresses p {
+      font-size: 1.4rem; } }
+  @media screen and (min-width: 1200px) {
+    .c-wow-footer > p, .c-wow-footer__adresses p {
+      font-size: 1.8rem; } }
+
+.c-wow-footer > p {
+  font-weight: 700; }
+
+.c-wow-footer__adresses p {
+  font-weight: 400; }
+
+.c-wow-footer__adresses p a {
+  color: #00fff0; }
+
+.c-wow-footer__adresses p a:hover {
+  text-decoration: underline; }
+
+.c-wow-footer__tm {
+  background-color: #383838;
+  width: 100%;
+  padding-block-start: 2em;
+  padding-block-end: 2em;
+  padding-inline-start: 2em;
+  padding-inline-end: 2em; }
+
+.c-wow-footer__tm p {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.2em;
+  text-align: center;
+  background-color: #383838; }
+  @media screen and (min-width: 600px) {
+    .c-wow-footer__tm p {
+      font-size: 1.2rem; } }
+  @media screen and (min-width: 1200px) {
+    .c-wow-footer__tm p {
+      font-size: 1.4rem; } }
+
 .l-grid-two {
   display: grid;
   grid-template-columns: 1fr;
