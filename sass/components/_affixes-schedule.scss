@@ -4,6 +4,7 @@
   align-items: center;
   padding-inline-start: 1rem;
   padding-inline-end: 1rem;
+  width: 100%;
   max-width: 101rem;
 
   @include mq($tablet-portrait, min) {

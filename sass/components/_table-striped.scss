@@ -7,9 +7,12 @@
   font-size: $wow-fsize-paragraph-s;
   line-height: 2.5em;
   width: 100%;
+  min-width: 50rem;
 
   @include mq($tablet-portrait, min) {
     font-size: $wow-fsize-paragraph-m;
+    min-width: 100rem;
+
   }
 
   @include mq($laptop, min) {
