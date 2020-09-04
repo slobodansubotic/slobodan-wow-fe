@@ -133,9 +133,18 @@
   m   ->  margin
   b   ->  block
   e   ->  end
+  lg  ->  large
   md  ->  medium
   sm  ->  small
 */
+.u-mbe-lg {
+  margin-block-end: 4rem;
+
+  @include mq($laptop, min) {
+    margin-block-end: 6rem;
+  }
+}
+
 .u-mbe-md {
   margin-block-end: 2.5rem;
 
@@ -168,4 +177,8 @@
   @include mq($laptop, min) {
     font-size: $wow-fsize-paragraph-l;
   }
+}
+
+.u-subtext--normal {
+  font-style: normal;
 }

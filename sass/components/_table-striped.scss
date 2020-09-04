@@ -1,0 +1,58 @@
+.c-table-striped {
+  display: grid;
+  grid-template-columns: 1fr;
+  font-family: $wow-font-paragraph;
+  font-style: normal;
+  font-weight: 500;
+  font-size: $wow-fsize-paragraph-s;
+  line-height: 2.5em;
+  width: 100%;
+
+  @include mq($tablet-portrait, min) {
+    font-size: $wow-fsize-paragraph-m;
+  }
+
+  @include mq($laptop, min) {
+    font-size: $wow-fsize-paragraph-l;
+  }
+}
+
+.c-table-striped__header {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  list-style: none;
+  background-color: $wow-color-green;
+  color: $wow-color-grey-four;
+}
+
+.c-table-striped__row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  list-style: none;
+}
+
+.c-table-striped__row:nth-child(odd) {
+  background-color: rgba($color: $wow-color-grey-five, $alpha: 0);
+}
+
+.c-table-striped__row:nth-child(even) {
+  background-color: rgba($color: $wow-color-grey-five, $alpha: 0.2);
+}
+
+.c-table-striped__header > span, .c-table-striped__row > span {
+  padding-inline-start: 1em;
+
+  @include mq($tablet-portrait, min) {
+    padding-inline-start: 2em;
+  }
+
+  @include mq($laptop, min) {
+    padding-inline-start: 3em;
+  }
+}
+
+.c-table-striped__row:hover {
+  background-color: rgba($color: $wow-color-grey-five, $alpha: 0.8);
+}
