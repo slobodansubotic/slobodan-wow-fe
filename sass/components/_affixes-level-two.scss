@@ -1,4 +1,7 @@
 .c-affixes-level-two {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
     padding-block-start: 2rem;
     padding-block-end: 2rem;
 

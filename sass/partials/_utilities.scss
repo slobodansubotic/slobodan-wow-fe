@@ -2,7 +2,6 @@
   font-family: $wow-font-heading;
   font-style: normal;
   font-weight: bold;
-  text-align: center;
   line-height: 1.2em;  
 }
 
@@ -72,7 +71,7 @@
 .u-paragraph-normal {
   font-family: $wow-font-paragraph;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: $wow-fsize-paragraph-s;
   text-align: center;
 
@@ -193,3 +192,6 @@
   text-transform: uppercase;
 }
 
+.u-self-align-start {
+  justify-self: start;
+}
