@@ -13,14 +13,63 @@
     background: url(../assets/images/hero.png) no-repeat top center;
     background-size: cover;
 
-    @include mq($laptop, min) {
-        padding-block-end: 22rem;
-        padding-block-start: 22rem;
+    @include mq($tablet-portrait, min) {
+        padding-block-start: 10%;
+        padding-block-end: 10%;
+    }
+
+    @include mq($desktop, min) {
+        height: 97rem;
+        justify-content: start;
+        padding-block-start: 0;
+        padding-block-end: 0;
+
+        .u-paragraph-normal {
+
+            &:first-child {
+                margin-block-start: 32.8rem;
+                margin-block-end: 3rem;
+            }
+
+            &:nth-child(5) {
+                margin-block-start: auto;
+                margin-block-end: 32.8rem;
+            }
+        }
+
+        .u-separator {
+            margin-block-start: 0;
+            margin-block-end: 2rem;
+        }
+
+        .c-hero__heading-box {
+            margin-block-end: 3rem;
+        }
+
+        .u-heading-l {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .u-paragraph-normal {
+        color: $wow-color-secondary;
     }
 }
 
 .c-hero__separator {
     margin-block-start: 1em;
+}
+
+.c-hero__heading-box {
+    .u-heading-l:first-child {
+        .c-hero__heading-prefix {
+
+            @include mq($desktop, min) {
+                margin-inline-end: 0.3rem;
+            }
+        }
+    }
 }
 
 .c-hero__heading-prefix {
@@ -29,9 +78,18 @@
 
     @include mq($tablet-portrait, min) {
         display: inline-block;
-        padding-inline-end: 0.25em;
-        border-inline-end: 1px solid #ffb86c;
-        line-height: 1em;
+    }
+
+    & + span {
+
+        @include mq($desktop, min) {
+            display: inline-block;
+            width: 0.1rem;
+            height: 5.7rem;
+            background-color: $wow-color-orange;
+            margin-inline-start: 1rem;
+            margin-inline-end: 1rem;
+        }
     }
 }
 
@@ -51,9 +109,11 @@
     border-block-end: 0.2rem solid $wow-color-red;
 
     @include mq($laptop, min) {
+        width: 8.4rem;
+        font-size: 1.4rem;
         position: absolute;
-        left: 14rem;
-        bottom: 14rem;
+        left: 10rem;
+        bottom: 17.4rem;
         transform: rotateZ(-90deg);
         text-align: end;
     }
