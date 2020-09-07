@@ -10,6 +10,25 @@
 
 <body>
   <div class="wrapper">
+    <navigation class="c-navigation">
+      <input class="c-navigation__toggle" type="checkbox">
+
+      <div class="c-navigation__icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul class="c-navigation__list">
+        <li><a href="#affixes-intro">Affixes</a></li>
+        <li><a href="#level-two-affixes">Level 2 Affixes</a></li>
+        <li><a href="#level-four-affixes">Level 4 Affixes</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#considerations">Consideratins</a></li>
+        <li><a href="#useful-stuff">Useful Stuff</a></li>
+      </ul>
+    </navigation>
+
     <section class="c-hero">
       <p class="u-paragraph-normal">What garbage affixes do i have to deal with this week?</p>
 
@@ -39,7 +58,7 @@
 
     <main class="c-affixes">
       <div class="c-affixes__background-wrapper c-affixes__background-wrapper--one">
-        <section class="c-affixes-intro">
+        <section id="affixes-intro" class="c-affixes-intro">
           <h2 class="u-heading-m u-mbe-md">Affixes</h2>
 
           <div class="three-color-squares u-mbe-md">
@@ -75,7 +94,7 @@
 
         <div class="u-separator u-separator-wide u-mbe-md"></div>
 
-        <section class="c-affixes-level-two">
+        <section id="level-two-affixes" class="c-affixes-level-two">
           <h2 class="u-heading-m u-mbe-md">Level 2 Affixes</h2>
 
           <div class="three-color-squares u-mbe-md">
@@ -125,7 +144,7 @@
       </div>
 
       <div class="c-affixes__background-wrapper c-affixes__background-wrapper--two">
-        <section class="c-affixes-level-four u-mbe-lg">
+        <section id="level-four-affixes" class="c-affixes-level-four u-mbe-lg">
           <h2 class="u-heading-m u-mbe-md">Level 4 Affixes</h2>
   
           <div class="three-color-squares u-mbe-md">
@@ -197,7 +216,7 @@
           </div>
         </section>
 
-        <div class="c-affixes-schedule u-mbe-lg">
+        <section id="schedule" class="c-affixes-schedule u-mbe-lg">
           <p class="u-subtext u-subtext--normal-upperc u-mbe-md">
             Weekly schedule for affixes these mey not be entirely correct as there are undocumented affix schedule changes!
           </p>
@@ -286,13 +305,13 @@
               </li>
             </ul>
           </div>
-        </div>
+        </section>
 
         <div class="u-separator-wide"></div>
       </div>
 
       <div class="c-affixes__background-wrapper c-affixes__background-wrapper--three">
-        <section class="c-group-consideratinos">
+        <section id="considerations" class="c-group-consideratinos">
           <h2 class="u-heading-m u-mbe-md">Group Considerations</h2>
   
           <div class="three-color-squares u-mbe-md">
@@ -331,7 +350,7 @@
           <div class="u-separator-wide"></div>
         </section>
 
-        <section class="c-useful-stuff">
+        <section id="useful-stuff" class="c-useful-stuff">
           <h2 class="u-heading-m u-mbe-md">Useful Stuff</h2>
   
           <div class="three-color-squares u-mbe-md">
