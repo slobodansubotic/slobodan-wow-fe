@@ -9,6 +9,13 @@
 html, body {
   font-size: 10px; }
 
+html {
+  scroll-behavior: smooth; }
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 100vw; }
+
 @font-face {
   font-family: 'Cairo';
   src: url(../assets/fonts/Cairo/Cairo-Bold.ttf) format("truetype");
@@ -447,6 +454,83 @@ html, body {
   @media screen and (min-width: 1200px) {
     .c-wow-footer__tm p {
       font-size: 1.4rem; } }
+
+.c-navigation {
+  position: relative;
+  height: 6rem;
+  background-color: #000; }
+  @media screen and (min-width: 900px) {
+    .c-navigation {
+      height: initial; } }
+
+.c-navigation__toggle {
+  position: absolute;
+  top: 1.85rem;
+  left: 2rem;
+  width: 3rem;
+  height: 2.5rem;
+  opacity: 0;
+  z-index: 20;
+  cursor: pointer; }
+  @media screen and (min-width: 900px) {
+    .c-navigation__toggle {
+      display: none; } }
+
+.c-navigation__toggle:checked ~ .c-navigation__list {
+  display: flex; }
+
+.c-navigation__icon {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  z-index: 10; }
+  @media screen and (min-width: 900px) {
+    .c-navigation__icon {
+      display: none; } }
+  .c-navigation__icon span {
+    display: block;
+    width: 3rem;
+    height: 0.4rem;
+    background: #fff;
+    border-radius: 0.3rem; }
+    .c-navigation__icon span:not(:last-child) {
+      margin-block-end: 0.5rem; }
+
+.c-navigation__list {
+  position: absolute;
+  top: 6rem;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  background-color: #000;
+  width: 100%;
+  max-width: 100rem;
+  z-index: 30; }
+  @media screen and (min-width: 900px) {
+    .c-navigation__list {
+      position: static;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly; } }
+  .c-navigation__list li {
+    width: 100%; }
+  .c-navigation__list a {
+    display: inline-block;
+    width: 100%;
+    font-family: Cairo, sans-serif;
+    line-height: 2.5em;
+    color: #fff;
+    text-align: center;
+    font-size: 1.8rem;
+    transition: background-color 250ms ease-in-out; }
+    @media screen and (min-width: 1200px) {
+      .c-navigation__list a {
+        font-size: 2rem; } }
+    .c-navigation__list a:hover {
+      background-color: #383838; }
 
 .l-grid-two {
   display: grid;

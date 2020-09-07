@@ -1,0 +1,97 @@
+.c-navigation {
+  position: relative;
+  height: 6rem;
+  background-color: $wow-color-black;
+    
+  @include mq($tablet-landscape, min) {
+    height: initial;
+  }
+}
+
+.c-navigation__toggle {
+  position: absolute;
+  top: 1.85rem;
+  left: 2rem;
+  width: 3rem;
+  height: 2.5rem;
+  opacity: 0;
+  z-index: 20;
+  cursor: pointer;
+
+  @include mq($tablet-landscape, min) {
+    display: none;
+  }
+}
+
+.c-navigation__toggle:checked ~ .c-navigation__list {
+  display: flex;
+}
+
+.c-navigation__icon {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  z-index: 10;
+  
+  @include mq($tablet-landscape, min) {
+    display: none;
+  }
+
+  span {
+    display: block;
+    width: 3rem;
+    height: 0.4rem;  
+    background: $wow-color-primary;
+    border-radius: 0.3rem;
+  
+    &:not(:last-child) {
+      margin-block-end: 0.5rem;
+    }
+  }
+}
+
+.c-navigation__list {
+  position: absolute;
+  top: 6rem;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  background-color: $wow-color-black;
+  width: 100%;
+  max-width: 100rem;
+  z-index: 30;
+
+  @include mq($tablet-landscape, min) {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  li {
+    width: 100%;
+  }
+
+  a {
+    display: inline-block;
+    width: 100%;
+    font-family: $wow-font-heading;
+    line-height: 2.5em;
+    color: $wow-color-primary;
+    text-align: center;
+    font-size: $wow-fsize-paragraph-l;
+  
+    transition: background-color 250ms ease-in-out;
+  
+    @include mq($laptop, min) {
+      font-size: $wow-fsize-heading-xs;
+    }
+        
+    &:hover {
+      background-color: $wow-color-grey-four;
+    }
+  }
+}
