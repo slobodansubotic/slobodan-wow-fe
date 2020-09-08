@@ -664,6 +664,9 @@ html {
     .u-paragraph-italic {
       font-size: 1.4rem; } }
 
+.u-text-color-secondary {
+  color: #bcbcbc; }
+
 .u-separator {
   width: 6rem;
   height: 0.1rem; }
