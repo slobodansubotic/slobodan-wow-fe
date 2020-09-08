@@ -8,9 +8,13 @@
   padding-inline-end: 3rem;
 }
 
-.c-affix-card--normal:hover {
-  background-color: rgba($color: $wow-color-primary, $alpha: .1);
-  box-shadow: 0 0.2rem 4rem rgba($color: $wow-color-black, $alpha: .2);
+.c-affix-card--normal {
+  transition: all 250ms ease-in;
+
+  &:hover {
+    background-color: rgba($color: $wow-color-primary, $alpha: .1);
+    box-shadow: 0 0.2rem 4rem rgba($color: $wow-color-black, $alpha: .2);
+  }
 }
 
 .c-affix-card--accent {
