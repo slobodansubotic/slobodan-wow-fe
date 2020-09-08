@@ -427,6 +427,8 @@ html {
   @media screen and (min-width: 1200px) {
     .c-wow-footer {
       padding-block-start: 6rem; } }
+  .c-wow-footer > p {
+    font-weight: 700; }
 
 .c-wow-footer__adresses {
   display: flex;
@@ -446,6 +448,12 @@ html {
     .c-wow-footer__adresses {
       padding-inline-start: 10%;
       padding-inline-end: 10%; } }
+  .c-wow-footer__adresses p {
+    font-weight: 400; }
+  .c-wow-footer__adresses a {
+    color: #00fff0; }
+    .c-wow-footer__adresses a:hover {
+      text-decoration: underline; }
 
 .c-wow-footer > p, .c-wow-footer__adresses p {
   font-size: 1.2rem;
@@ -457,18 +465,6 @@ html {
     .c-wow-footer > p, .c-wow-footer__adresses p {
       font-size: 1.8rem; } }
 
-.c-wow-footer > p {
-  font-weight: 700; }
-
-.c-wow-footer__adresses p {
-  font-weight: 400; }
-
-.c-wow-footer__adresses p a {
-  color: #00fff0; }
-
-.c-wow-footer__adresses p a:hover {
-  text-decoration: underline; }
-
 .c-wow-footer__tm {
   background-color: #383838;
   width: 100%;
@@ -476,19 +472,18 @@ html {
   padding-block-end: 2em;
   padding-inline-start: 2em;
   padding-inline-end: 2em; }
-
-.c-wow-footer__tm p {
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.2em;
-  text-align: center;
-  background-color: #383838; }
-  @media screen and (min-width: 600px) {
-    .c-wow-footer__tm p {
-      font-size: 1.2rem; } }
-  @media screen and (min-width: 1200px) {
-    .c-wow-footer__tm p {
-      font-size: 1.4rem; } }
+  .c-wow-footer__tm p {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.2em;
+    text-align: center;
+    background-color: #383838; }
+    @media screen and (min-width: 600px) {
+      .c-wow-footer__tm p {
+        font-size: 1.2rem; } }
+    @media screen and (min-width: 1200px) {
+      .c-wow-footer__tm p {
+        font-size: 1.4rem; } }
 
 .c-navigation {
   position: relative;
