@@ -212,9 +212,11 @@ html {
   padding-inline-start: 3rem;
   padding-inline-end: 3rem; }
 
-.c-affix-card--normal:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 0.2rem 4rem rgba(0, 0, 0, 0.2); }
+.c-affix-card--normal {
+  transition: background-color 250ms ease-in, box-shadow 250ms ease-in; }
+  .c-affix-card--normal:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0.2rem 4rem rgba(0, 0, 0, 0.2); }
 
 .c-affix-card--accent {
   padding-block-start: 0;
@@ -663,6 +665,9 @@ html {
   @media screen and (min-width: 1200px) {
     .u-paragraph-italic {
       font-size: 1.4rem; } }
+
+.u-text-color-secondary {
+  color: #bcbcbc; }
 
 .u-separator {
   width: 6rem;
