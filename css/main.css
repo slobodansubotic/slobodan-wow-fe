@@ -213,7 +213,7 @@ html {
   padding-inline-end: 3rem; }
 
 .c-affix-card--normal {
-  transition: background-color 250ms ease-in, box-shadow 250ms ease-in; }
+  transition: all 250ms ease-in; }
   .c-affix-card--normal:hover {
     background-color: rgba(255, 255, 255, 0.1);
     box-shadow: 0 0.2rem 4rem rgba(0, 0, 0, 0.2); }

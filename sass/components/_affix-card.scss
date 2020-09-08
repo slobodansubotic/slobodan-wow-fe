@@ -9,8 +9,7 @@
 }
 
 .c-affix-card--normal {
-  transition: background-color 250ms ease-in,
-              box-shadow 250ms ease-in;
+  transition: all 250ms ease-in;
 
   &:hover {
     background-color: rgba($color: $wow-color-primary, $alpha: .1);
