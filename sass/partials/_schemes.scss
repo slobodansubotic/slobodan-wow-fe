@@ -8,18 +8,62 @@
 
         &:nth-child(1) {
             background-color: $wow-color-red;
+
+            animation: wave-start 5s ease-in-out infinite;
+            transform-origin: bottom right;
         }
 
         &:nth-child(2) {
             background-color: $wow-color-orange;
+
+            animation: wave-center 5s ease-in-out infinite;
         }
 
         &:nth-child(3) {
             background-color: $wow-color-green;
+
+            animation: wave-end 5s ease-in-out infinite;
+            transform-origin: top left;
         }
     }
 }
 
+@keyframes wave-start {
+    0% { transform: rotateZ(0); }
+    12.5% { transform: rotateZ(90deg); }
+    25% { transform: rotateZ(90deg); }
+    37.5% { transform: rotateZ(0); }
+    50% { transform: rotateZ(0); }
+    62.5% { transform: rotateZ(-180deg); }
+    75% { transform: rotateZ(-180deg); }
+    87.5% { transform: rotateZ(0); }
+    100% { transform: rotateZ(0); }
+}
+
+@keyframes wave-center {
+    0% { transform: translateY(0); }
+    12.5% { transform: translateY(1.1rem); }
+    25% { transform: translateY(1.1rem); }
+    37.5% { transform: translateY(0); }
+    50% { transform: translateY(0); }
+    62.5% { transform: translateY(-1.1rem); }
+    75% { transform: translateY(-1.1rem); }
+    87.5% { transform: translateY(0); }
+    100% { transform: translateY(0); }
+
+}
+
+@keyframes wave-end {
+    0% { transform: rotateZ(0); }
+    12.5% { transform: rotateZ(-180deg); }
+    25% { transform: rotateZ(-180deg); }
+    37.5% { transform: rotateZ(0); }
+    50% { transform: rotateZ(0); }
+    62.5% { transform: rotateZ(90deg); }
+    75% { transform: rotateZ(90deg); }
+    87.5% { transform: rotateZ(0); }
+    100% { transform: rotateZ(0); }
+}
 
 .difficulties {
     display: flex;
