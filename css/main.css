@@ -277,7 +277,9 @@ html {
   font-size: 1.2rem;
   line-height: 2.5em;
   width: 100%;
-  min-width: 50rem; }
+  min-width: 50rem;
+  margin-inline-start: auto;
+  margin-inline-end: auto; }
   @media screen and (min-width: 600px) {
     .c-table-striped {
       font-size: 1.4rem;
@@ -285,6 +287,10 @@ html {
   @media screen and (min-width: 1200px) {
     .c-table-striped {
       font-size: 1.8rem; } }
+  @media screen and (min-width: 1200px) {
+    .c-table-striped {
+      min-width: initial;
+      width: 90rem; } }
 
 .c-table-striped__header {
   display: grid;
