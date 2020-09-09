@@ -14,7 +14,7 @@ html {
 
 .wrapper {
   display: grid;
-  grid-template-columns: 100vw; }
+  grid-template-columns: 100%; }
 
 @font-face {
   font-family: 'Cairo';
