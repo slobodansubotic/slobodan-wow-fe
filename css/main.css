@@ -170,6 +170,7 @@ html {
   color: #fff; }
 
 .c-affixes__background-wrapper {
+  position: relative;
   width: 100%; }
 
 .c-affixes__background-wrapper--one {
@@ -190,18 +191,18 @@ html {
   padding-inline-start: 3rem;
   padding-inline-end: 3rem;
   padding-block-start: 3rem;
-  padding-block-end: 2rem; }
+  padding-block-end: 2rem;
+  width: 100%;
+  max-width: 92.7rem; }
   @media screen and (min-width: 600px) {
     .c-affixes-intro {
       padding-inline-start: 10rem;
       padding-inline-end: 10rem; } }
-  @media screen and (min-width: 900px) {
-    .c-affixes-intro {
-      padding-inline-start: 25%;
-      padding-inline-end: 25%; } }
   @media screen and (min-width: 1200px) {
     .c-affixes-intro {
-      padding-block-start: 6rem; } }
+      padding-block-start: 6rem;
+      padding-inline-start: 0;
+      padding-inline-end: 0; } }
 
 .c-affix-card {
   display: flex;
@@ -253,20 +254,32 @@ html {
   grid-template-columns: 1fr;
   justify-items: center;
   padding-block-start: 2rem;
-  padding-block-end: 2rem; }
+  padding-block-end: 2rem;
+  width: 100%;
+  max-width: 101.1rem;
+  padding-inline-start: 5%;
+  padding-inline-end: 5%; }
   @media screen and (min-width: 1200px) {
     .c-affixes-level-two {
-      padding-block-end: 6rem; } }
+      padding-block-end: 6rem;
+      padding-inline-start: 0;
+      padding-inline-end: 0; } }
 
 .c-affixes-level-four {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-block-start: 3rem;
-  padding-block-end: 3rem; }
+  padding-block-end: 3rem;
+  width: 100%;
+  max-width: 101.1rem;
+  padding-inline-start: 5%;
+  padding-inline-end: 5%; }
   @media screen and (min-width: 1200px) {
     .c-affixes-level-four {
-      padding-block-start: 6rem; } }
+      padding-block-start: 6rem;
+      padding-inline-start: 0;
+      padding-inline-end: 0; } }
 
 .c-table-striped {
   display: grid;
@@ -339,7 +352,7 @@ html {
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
-  max-width: 101rem;
+  max-width: 96rem;
   padding-inline-start: 2rem;
   padding-inline-end: 2rem;
   padding-block-start: 3rem; }
@@ -380,7 +393,7 @@ html {
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
-  max-width: 101rem;
+  max-width: 96rem;
   padding-inline-start: 2rem;
   padding-inline-end: 2rem;
   padding-block-start: 3rem; }
@@ -434,20 +447,15 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: 100%;
+  max-width: 120rem;
   padding-inline-start: 2em;
   padding-inline-end: 2em; }
   @media screen and (min-width: 900px) {
     .c-wow-footer__adresses {
       flex-direction: row;
-      justify-content: space-evenly;
-      padding-inline-start: 10%;
-      padding-inline-end: 10%; } }
-  @media screen and (min-width: 1200px) {
-    .c-wow-footer__adresses {
-      padding-inline-start: 10%;
-      padding-inline-end: 10%; } }
+      justify-content: space-evenly; } }
   .c-wow-footer__adresses p {
     font-weight: 400; }
   .c-wow-footer__adresses a {
@@ -473,10 +481,13 @@ html {
   padding-inline-start: 2em;
   padding-inline-end: 2em; }
   .c-wow-footer__tm p {
+    width: 100%;
+    max-width: 128.6rem;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.2em;
-    text-align: center;
     background-color: #383838; }
     @media screen and (min-width: 600px) {
       .c-wow-footer__tm p {
@@ -564,20 +575,11 @@ html {
 
 .l-grid-two {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 1.5rem;
-  padding-block-start: 2rem;
-  padding-block-end: 2rem;
-  padding-inline-start: 2rem;
-  padding-inline-end: 2rem; }
-  @media screen and (min-width: 600px) {
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-gap: 3.7rem; }
+  @media screen and (min-width: 1200px) {
     .l-grid-two {
-      grid-template-columns: repeat(2, minmax(min-content, 49rem));
-      grid-gap: 3rem;
-      padding-block-start: 4rem;
-      padding-block-end: 4rem;
-      padding-inline-start: 4rem;
-      padding-inline-end: 4rem; } }
+      grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr)); } }
 
 .u-heading-l, .u-heading-m, .u-heading-s {
   font-family: Cairo, sans-serif;
@@ -685,9 +687,17 @@ html {
   background: #50fa7b; }
 
 .u-separator-wide {
-  width: 60%;
+  width: 100%;
   height: 0.1rem;
   background-color: #6f6f6f; }
+  @media screen and (min-width: 1200px) {
+    .u-separator-wide {
+      width: 120rem; } }
+
+.u-separator-wide--absolute {
+  position: absolute;
+  bottom: 1px;
+  z-index: 10; }
 
 /*
   m   ->  margin

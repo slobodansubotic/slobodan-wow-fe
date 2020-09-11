@@ -6,18 +6,17 @@
     padding-inline-end: 3rem;
     padding-block-start: 3rem;
     padding-block-end: 2rem;
+    width: 100%;
+    max-width: 92.7rem;
 
     @include mq($tablet-portrait, min) {
         padding-inline-start: 10rem;
         padding-inline-end: 10rem;
     }
 
-    @include mq($tablet-landscape, min) {
-        padding-inline-start: 25%;
-        padding-inline-end: 25%;
-    }
-
     @include mq($laptop, min) {
         padding-block-start: 6rem;
+        padding-inline-start: 0;
+        padding-inline-end: 0;
     }
 }

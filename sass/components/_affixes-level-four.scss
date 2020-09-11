@@ -4,8 +4,14 @@
   align-items: center;
   padding-block-start: 3rem;
   padding-block-end: 3rem;
+  width: 100%;
+  max-width: 101.1rem;
+  padding-inline-start: 5%;
+  padding-inline-end: 5%;
 
   @include mq($laptop, min) {
     padding-block-start: 6rem;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
   }
 }

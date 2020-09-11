@@ -21,21 +21,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: 100%;
+  max-width: 120rem;
   padding-inline-start: 2em;
   padding-inline-end: 2em;
 
   @include mq($tablet-landscape, min) {
     flex-direction: row;
     justify-content: space-evenly;
-    padding-inline-start: 10%;
-    padding-inline-end: 10%;
-  }
-
-  @include mq($laptop, min) {
-    padding-inline-start: 10%;
-    padding-inline-end: 10%;
   }
 
   p {
@@ -73,10 +67,13 @@
   padding-inline-end: 2em;
 
   p {
+    width: 100%;
+    max-width: 128.6rem;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
     font-weight: 400;
     font-size: $wow-fsize-paragraph-xs;
     line-height: 1.2em;
-    text-align: center;
     background-color: $wow-color-grey-four;
     
     @include mq($tablet-portrait, min) {
