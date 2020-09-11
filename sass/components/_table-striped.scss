@@ -8,15 +8,21 @@
   line-height: 2.5em;
   width: 100%;
   min-width: 50rem;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
 
   @include mq($tablet-portrait, min) {
     font-size: $wow-fsize-paragraph-m;
     min-width: 100rem;
-
   }
 
   @include mq($laptop, min) {
     font-size: $wow-fsize-paragraph-l;
+  }
+
+  @include mq($laptop, min) {
+    min-width: initial;
+    width: 90rem;
   }
 }
 
