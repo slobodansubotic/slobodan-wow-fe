@@ -4,8 +4,14 @@
     justify-items: center;
     padding-block-start: 2rem;
     padding-block-end: 2rem;
+    width: 100%;
+    max-width: 101.1rem;
+    padding-inline-start: 5%;
+    padding-inline-end: 5%;
 
     @include mq($laptop, min) {
         padding-block-end: 6rem;
+        padding-inline-start: 0;
+        padding-inline-end: 0;
     }
 }
